@@ -70,14 +70,28 @@ HTML
 La cabecera (`<head>`) incluye información que no se muestra directamente en la página, pero es esencial para su funcionamiento:
 - `<title>`: Título que aparece en la pestaña del navegador.
 - `<meta>`: Metadatos, como la codificación de caracteres.
+  - Ejemplos comunes de meta etiquetas:
+    ```html
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Página web de ejemplo">
+    <meta name="keywords" content="tienda, boniatos, sevilla">
+    <meta name="author" content="Tu Nombre">
+    ```
 - `<link>`: Enlace a archivos CSS.
 - `<script>`: Enlace a archivos JavaScript.
 
-Ejemplo:
+Ejemplo completo de `<head>`:
 ```html
 <head>
     <title>Mi Primera Página</title>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Página web de ejemplo">
+    <meta name="keywords" content="tienda, boniatos, sevilla">
+    <meta name="author" content="Tu Nombre">
     <link rel="stylesheet" href="styles.css">
     <script src="app.js"></script>
 </head>
@@ -85,25 +99,49 @@ Ejemplo:
 
 ---
 
-### Ejemplo Básico Completo:
+## 4️⃣ Añadiendo Contenido: Etiquetas Básicas
+
+### 📰 **Encabezados**
+Los encabezados estructuran el contenido en niveles jerárquicos, del más importante (`<h1>`) al menos importante (`<h6>`):
 ```html
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Mi Primera Página</title>
-    <meta charset="UTF-8">
-</head>
-<body>
-    <h1>¡Hola Mundo!</h1>
-    <p>Este es un ejemplo básico de HTML.</p>
-</body>
-</html>
+<h1>Título Principal</h1>
+<h2>Sección Importante</h2>
+<h3>Subsección</h3>
+<h4>Detalles</h4>
+<h5>Menor Detalle</h5>
+<h6>Nota Final</h6>
 ```
 
 ---
 
-Con esta información tienes una visión clara de los fundamentos de HTML. ¡Sigamos avanzando para profundizar más! 🚀
+### 🖋️ **Etiquetas de Formato**
+Estas etiquetas permiten cambiar el estilo del texto dentro de un documento:
+- **Negrita:** `<b>Texto</b>`
+- **Cursiva:** `<i>Texto</i>`
+- **Tachado:** `<del>Texto</del>`
+- **Énfasis:** `<em>Texto</em>`
+- **Texto pequeño:** `<small>Texto</small>`
+- **Superíndice:** `<sup>Texto</sup>`
+- **Subíndice:** `<sub>Texto</sub>`
 
-## Contacto
-- ***autor**: Richard Chadwick PlaZA
-- ***fecha**: 12/12/2024
+Ejemplo:
+```html
+<p>Este es un <b>texto en negrita</b>, y este es un <i>texto en cursiva</i>.</p>
+```
+
+---
+
+### ✍️ **Otros Elementos**
+- **Salto de línea:** `<br />`
+- **Separador de temas:** `<hr />`
+- **Párrafo:** `<p>Texto</p>`
+
+Ejemplo:
+```html
+<p>Este es un párrafo.</p>
+<hr />
+<p>Otro párrafo tras un separador.</p>
+```
+
+---
+
