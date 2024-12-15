@@ -1,32 +1,38 @@
 # 🚀 Curso de HTML y CSS - OpenWebinars
 
-¡Bienvenido a mi repositorio! Aquí encontrarás todo lo que voy realizando durante el curso básico de **HTML y CSS** en OpenWebinars. 🌐💻
+¡Bienvenido al repositorio del curso **HTML y CSS** en OpenWebinars! 🌐💻
 
-## 👨‍💻 Sobre mí
+## 📚 Sobre este repositorio
 
-Hola, soy **Richard Chadwick Plaza**. Actualmente estoy en el segundo año del **Grado Superior en Desarrollo de Aplicaciones Multiplataforma (DAM)**. 
-
-✨ Mi interés principal es el desarrollo web y de interfaces, ya que creo que el diseño y la interacción visual son claves para crear aplicaciones que realmente conecten con los usuarios.
-
-🎯 Aunque ya tengo algunas bases, siento que aún me falta dominar herramientas esenciales para el desarrollo frontend. Por eso, he decidido dar este paso y comenzar desde cero con este curso. ¡Mi objetivo es fortalecer mis habilidades y encaminarme hacia el mundo del diseño web profesional! 🖌️👨‍🎨
-
-## 📚 Sobre el repositorio
-
-Este repositorio será mi lugar de trabajo donde:
-- 🔍 **Subiré ejercicios y prácticas** realizados durante el curso.
-- 🛠️ **Crearé proyectos** para poner en práctica lo aprendido.
-- ✏️ **Anotaré mi progreso y reflexiones** sobre cada tema.
-
-### 📂 Estructura del repositorio
-A medida que avance el curso, la estructura se irá formando y adaptando. De momento, incluiré:
-- `proyectos/` ➡️ Proyectos más grandes o completos.
-- `ejercicios/` ➡️ Prácticas y pequeñas actividades del curso.
-- `recursos/` ➡️ Archivos de apoyo como imágenes, apuntes o referencias.
-
-## ✨ Objetivo del curso
-
-Comenzar a dominar los fundamentos de **HTML** y **CSS**, aprendiendo desde la base para diseñar páginas web atractivas y funcionales. Este curso es solo el primer paso en mi formación en desarrollo frontend. 🛤️🚀
+Este repositorio contiene los ejercicios y prácticas realizadas durante el curso básico de **HTML y CSS**. A través de estos ejercicios, se aplicarán los conceptos teóricos aprendidos en clase para afianzar conocimientos en desarrollo web.
 
 ---
 
-¡Gracias por pasarte por aquí! Si tienes algún comentario o sugerencia, no dudes en contactarme. 😊
+## 📂 Estructura del repositorio
+
+La estructura del repositorio se organiza de la siguiente manera:
+- **`proyectos/`** ➡️ Proyectos más grandes o completos realizados durante el curso.
+- **`ejercicios/`** ➡️ Ejercicios prácticos y actividades realizadas durante el aprendizaje.
+- **`recursos/`** ➡️ Archivos de apoyo como imágenes, apuntes o referencias.
+
+---
+
+## ✏️ Ejercicios y Prácticas
+
+### 1️⃣ **Práctica 1 - Imágenes**
+**Enunciado:**  
+Crear una página web que contenga tres imágenes:
+- **Logo de HTML5**, **CSS3** y **JavaScript**.
+- Los logos deben tener el mismo tamaño (200px x 200px) y estar centrados.
+- Los logos de HTML y CSS estarán alineados en la parte superior, mientras que el logo de JavaScript se ubicará centrado debajo de los anteriores.
+
+**Resultado esperado:**
+- Las imágenes se centran utilizando estilos en línea con el atributo `style`.
+- El código HTML debe verse organizado y bien estructurado.
+
+**Archivo asociado:**  
+`ejercicios/practica1-imagenes.html`
+
+---
+
+¡Sigue este repositorio para ver el progreso y las prácticas realizadas durante el curso! Si tienes alguna sugerencia, no dudes en compartirla. 😊

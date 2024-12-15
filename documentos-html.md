@@ -4,7 +4,7 @@ Recopilación de teoría básica sobre HTML basada en el curso introductorio. Es
 
 ---
 
-## 1️⃣ Evolución de HTML hasta HTML5
+## 1⃣ Evolución de HTML hasta HTML5
 
 HTML (HyperText Markup Language) es el lenguaje base para la construcción de páginas web. A lo largo de los años, ha evolucionado para adaptarse a las necesidades del desarrollo moderno:
 
@@ -15,9 +15,9 @@ HTML (HyperText Markup Language) es el lenguaje base para la construcción de p�
 
 ---
 
-## 2️⃣ Etiquetas, Atributos y Comentarios
+## 2⃣ Etiquetas, Atributos y Comentarios
 
-### 🏷️ **Etiquetas**
+### 📏 **Etiquetas**
 Las etiquetas son la base del HTML, utilizadas para estructurar el contenido. Cada etiqueta se compone de una apertura y un cierre, como:
 ```html
 <h1>Esto es un encabezado</h1>
@@ -42,7 +42,7 @@ Los comentarios se utilizan para añadir notas en el código que no serán visib
 
 ---
 
-## 3️⃣ Estructura de una Página Web (Árbol DOM)
+## 3⃣ Estructura de una Página Web (Árbol DOM)
 
 ### 📂 **Estructura del DOM**
 El DOM (Document Object Model) es una representación jerárquica de los elementos de una página web. La estructura típica es:
@@ -99,9 +99,9 @@ Ejemplo completo de `<head>`:
 
 ---
 
-## 4️⃣ Añadiendo Contenido: Etiquetas Básicas
+## 4⃣ Añadiendo Contenido: Etiquetas Básicas
 
-### 📰 **Encabezados**
+### 📜 **Encabezados**
 Los encabezados estructuran el contenido en niveles jerárquicos, del más importante (`<h1>`) al menos importante (`<h6>`):
 ```html
 <h1>Título Principal</h1>
@@ -131,7 +131,7 @@ Ejemplo:
 
 ---
 
-### ✍️ **Otros Elementos**
+### ✏️ **Otros Elementos**
 - **Salto de línea:** `<br />`
 - **Separador de temas:** `<hr />`
 - **Párrafo:** `<p>Texto</p>`
@@ -145,3 +145,62 @@ Ejemplo:
 
 ---
 
+## 5⃣ Imágenes, Listas, Figuras y Rutas
+
+### 🖼 **Imágenes**
+La etiqueta `<img>` se utiliza para insertar imágenes. Atributos frecuentes:
+- **`src`:** Ubicación de la imagen.
+- **`alt`:** Texto alternativo.
+- **`width` y `height`:** Dimensiones.
+
+Ejemplo:
+```html
+<img src="imagenes/ejemplo.jpg" alt="Descripción de la imagen" width="300" height="200">
+```
+
+### 🍯 **Figuras**
+La etiqueta `<figure>` se utiliza para asociar imágenes con una descripción:
+```html
+<figure>
+    <img src="img/openwebinars-logo.jpg" alt="Logo">
+    <figcaption>Logotipo con la etiqueta figure</figcaption>
+</figure>
+```
+
+### 📃 **Listas**
+- **Lista desordenada (`<ul>`):**
+```html
+<ul>
+    <li>Elemento 1</li>
+    <li>Elemento 2</li>
+</ul>
+```
+- **Lista ordenada (`<ol>`):**
+```html
+<ol>
+    <li>Primer elemento</li>
+</ol>
+```
+
+### 🔍 **Rutas**
+- **Relativa:** En relación al directorio del HTML.
+- **Absoluta:** Ruta completa.
+- **URL:** Dirección de Internet.
+
+Ejemplo:
+```html
+<img src="imagenes/ejemplo.jpg" alt="Relativa">
+<img src="https://ejemplo.com/imagen.jpg" alt="URL">
+```
+
+---
+
+## 🔗 Enlaces
+La etiqueta `<a>` crea hipervínculos. Atributos importantes:
+- **`href`:** Destino del enlace.
+- **`target`:** Comportamiento del enlace (_blank abre en nueva pestaña).
+
+Ejemplo:
+```html
+<a href="http://www.ejemplo.com" target="_blank">Ir a Ejemplo</a>
+```
