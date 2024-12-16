@@ -12,10 +12,10 @@ Este repositorio contiene ejercicios, prácticas y teoría esencial desarrollado
 
 La estructura del repositorio se organiza de la siguiente manera:
 
-- **`proyectos/`** ➡️ Proyectos más grandes o completos realizados durante el curso.
-- **`ejercicios/`** ➡️ Ejercicios prácticos y actividades realizadas durante el aprendizaje.
-- **`recursos/`** ➡️ Archivos de apoyo como imágenes, apuntes o referencias.
-- **`documentos-html.md`** ➡️ Archivo con teoría esencial de HTML, como etiquetas básicas, estructura de una página web, listas, imágenes y más.
+- **`proyectos/`** ➞ Proyectos más grandes o completos realizados durante el curso.
+- **`ejercicios/`** ➞ Ejercicios prácticos y actividades realizadas durante el aprendizaje.
+- **`recursos/`** ➞ Archivos de apoyo como imágenes, apuntes o referencias.
+- **`documentos-html.md`** ➞ Archivo con teoría esencial de HTML, como etiquetas básicas, estructura de una página web, listas, imágenes y más.
 
 ---
 
@@ -48,15 +48,13 @@ En este ejercicio crearemos una página web que contenga ejemplos de los tres ti
 
 ---
 
-### 3⃣ **practica2-listas.html**
+### 3️⃣ **practica2-listas.html**
 **Enunciado:**  
-Crear una página web que contenga **dos listas separadas** con la siguiente estructura:
-
-1. En el **lado izquierdo**, una **lista numerada** con subniveles utilizando `ol` y `ul`:
+Crear una página web que imite la siguiente estructura de listas anidadas:
+- En el **lado izquierdo**, una **lista numerada** con subniveles utilizando `ol` y `ul`:
     - Niveles de anidación con numeración romana (i, ii, iii).
     - Subniveles con letras alfabéticas (a, b, c).
-
-2. Debajo, una **segunda lista** que utiliza letras (A, B, C, etc.) como identificadores y muestra subniveles **con diferentes estilos** (numeración y viñetas).
+- En el **lado derecho**, una lista separada con **letras** como identificadores (A, B, C, etc.) que incluye subniveles numerados.
 
 - Ejemplo de la estructura:
     ```
@@ -80,11 +78,12 @@ Crear una página web que contenga **dos listas separadas** con la siguiente est
     ```
 
 **Resultado esperado:**  
-- Las dos listas deben aparecer bien estructuradas y con los niveles de anidación correctos, una debajo de la otra.
+- El contenido debe imitar la estructura presentada en la imagen con las listas alineadas correctamente y los niveles de anidación bien definidos.
 
 **Archivo asociado:**  
 `ejercicios/practica2-listas.html`
 
+---
 
 ## 📝 Referencia Teórica
 
