@@ -17,7 +17,7 @@ HTML (HyperText Markup Language) es el lenguaje base para la construcción de p�
 
 ## 2⃣ Etiquetas, Atributos y Comentarios
 
-### 📏 **Etiquetas**
+### 📜 **Etiquetas**
 Las etiquetas son la base del HTML, utilizadas para estructurar el contenido. Cada etiqueta se compone de una apertura y un cierre, como:
 ```html
 <h1>Esto es un encabezado</h1>
@@ -101,7 +101,7 @@ Ejemplo completo de `<head>`:
 
 ## 4⃣ Añadiendo Contenido: Etiquetas Básicas
 
-### 📜 **Encabezados**
+### 🌟 **Encabezados**
 Los encabezados estructuran el contenido en niveles jerárquicos, del más importante (`<h1>`) al menos importante (`<h6>`):
 ```html
 <h1>Título Principal</h1>
@@ -114,38 +114,58 @@ Los encabezados estructuran el contenido en niveles jerárquicos, del más impor
 
 ---
 
-### 🖋️ **Etiquetas de Formato**
-Estas etiquetas permiten cambiar el estilo del texto dentro de un documento:
-- **Negrita:** `<b>Texto</b>`
-- **Cursiva:** `<i>Texto</i>`
-- **Tachado:** `<del>Texto</del>`
-- **Énfasis:** `<em>Texto</em>`
-- **Texto pequeño:** `<small>Texto</small>`
-- **Superíndice:** `<sup>Texto</sup>`
-- **Subíndice:** `<sub>Texto</sub>`
+### 🔍 **Listas en HTML**
+Las listas son muy utilizadas en HTML para organizar contenido:
 
-Ejemplo:
+#### 🔢 **Listas Numeradas (Ordenadas)**
+Se crean con la etiqueta `<ol>` y cada elemento con `<li>`:
 ```html
-<p>Este es un <b>texto en negrita</b>, y este es un <i>texto en cursiva</i>.</p>
+<ol>
+    <li>Primer elemento</li>
+    <li>Segundo elemento</li>
+    <li>Tercer elemento</li>
+    <li>Cuarto elemento</li>
+</ol>
+```
+
+#### 📌 **Listas No Numeradas (Desordenadas)**
+Se crean con `<ul>`:
+```html
+<ul>
+    <li>Elemento 1</li>
+    <li>Elemento 2</li>
+    <li>Elemento 3</li>
+</ul>
+```
+
+#### 📄 **Listas Anidadas**
+Las listas pueden anidarse para crear subniveles:
+```html
+<ul>
+    <li>Elemento 1
+        <ul>
+            <li>Subelemento 1.1</li>
+            <li>Subelemento 1.2</li>
+        </ul>
+    </li>
+    <li>Elemento 2</li>
+</ul>
+```
+
+#### 🔗 **Listas de Definición**
+Se utilizan para términos y sus descripciones con `<dl>`, `<dt>` y `<dd>`:
+```html
+<dl>
+    <dt>HTML</dt>
+    <dd>Lenguaje de la web</dd>
+    <dt>CSS</dt>
+    <dd>Hojas de estilo</dd>
+</dl>
 ```
 
 ---
 
-### ✏️ **Otros Elementos**
-- **Salto de línea:** `<br />`
-- **Separador de temas:** `<hr />`
-- **Párrafo:** `<p>Texto</p>`
-
-Ejemplo:
-```html
-<p>Este es un párrafo.</p>
-<hr />
-<p>Otro párrafo tras un separador.</p>
-```
-
----
-
-## 5⃣ Imágenes, Listas, Figuras y Rutas
+## 5⃣ Imágenes, Figuras y Rutas
 
 ### 🖼 **Imágenes**
 La etiqueta `<img>` se utiliza para insertar imágenes. Atributos frecuentes:
@@ -165,21 +185,6 @@ La etiqueta `<figure>` se utiliza para asociar imágenes con una descripción:
     <img src="img/openwebinars-logo.jpg" alt="Logo">
     <figcaption>Logotipo con la etiqueta figure</figcaption>
 </figure>
-```
-
-### 📃 **Listas**
-- **Lista desordenada (`<ul>`):**
-```html
-<ul>
-    <li>Elemento 1</li>
-    <li>Elemento 2</li>
-</ul>
-```
-- **Lista ordenada (`<ol>`):**
-```html
-<ol>
-    <li>Primer elemento</li>
-</ol>
 ```
 
 ### 🔍 **Rutas**
@@ -204,3 +209,21 @@ Ejemplo:
 ```html
 <a href="http://www.ejemplo.com" target="_blank">Ir a Ejemplo</a>
 ```
+
+---
+
+### ✍️ **Etiquetas de Formato**
+Estas etiquetas permiten cambiar el estilo del texto dentro de un documento:
+- **Negrita:** `<b>Texto</b>`
+- **Cursiva:** `<i>Texto</i>`
+- **Tachado:** `<del>Texto</del>`
+- **Énfasis:** `<em>Texto</em>`
+
+Ejemplo:
+```html
+<p>Este es un <b>texto en negrita</b> y este es un <i>texto en cursiva</i>.</p>
+```
+
+---
+
+Con esta información tienes una visión clara de los fundamentos de HTML. ¡Sigamos avanzando para profundizar más! 🚀
