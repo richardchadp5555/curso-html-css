@@ -42,7 +42,7 @@ Los comentarios se utilizan para añadir notas en el código que no serán visib
 
 ---
 
-## 3⃣ Estructura de una Página Web (Árbol DOM)
+## 3⃣ Estructura de una Página Web (Arbol DOM)
 
 ### 📂 **Estructura del DOM**
 El DOM (Document Object Model) es una representación jerárquica de los elementos de una página web. La estructura típica es:
@@ -128,7 +128,7 @@ Se crean con la etiqueta `<ol>` y cada elemento con `<li>`:
 </ol>
 ```
 
-#### 📌 **Listas No Numeradas (Desordenadas)**
+#### 🔹 **Listas No Numeradas (Desordenadas)**
 Se crean con `<ul>`:
 ```html
 <ul>
@@ -167,7 +167,7 @@ Se utilizan para términos y sus descripciones con `<dl>`, `<dt>` y `<dd>`:
 
 ## 5⃣ Imágenes, Figuras y Rutas
 
-### 🖼 **Imágenes**
+### 🖼️ **Imágenes**
 La etiqueta `<img>` se utiliza para insertar imágenes. Atributos frecuentes:
 - **`src`:** Ubicación de la imagen.
 - **`alt`:** Texto alternativo.
@@ -178,7 +178,7 @@ Ejemplo:
 <img src="imagenes/ejemplo.jpg" alt="Descripción de la imagen" width="300" height="200">
 ```
 
-### 🍯 **Figuras**
+### 🎮 **Figuras**
 La etiqueta `<figure>` se utiliza para asociar imágenes con una descripción:
 ```html
 <figure>
@@ -200,30 +200,77 @@ Ejemplo:
 
 ---
 
-## 🔗 Enlaces
-La etiqueta `<a>` crea hipervínculos. Atributos importantes:
-- **`href`:** Destino del enlace.
-- **`target`:** Comportamiento del enlace (_blank abre en nueva pestaña).
+## 6⃣ Tablas en HTML
+
+### 🔢 **Estructura Básica de una Tabla**
+Una tabla básica se crea utilizando las etiquetas `<table>`, `<tr>`, `<th>`, y `<td>`.
+- `<table>`: Define la tabla.
+- `<tr>`: Define una fila.
+- `<th>`: Define un encabezado de columna.
+- `<td>`: Define una celda.
 
 Ejemplo:
 ```html
-<a href="http://www.ejemplo.com" target="_blank">Ir a Ejemplo</a>
+<table>
+    <tr>
+        <th>Nombre</th>
+        <th>Apellido</th>
+    </tr>
+    <tr>
+        <td>Juan</td>
+        <td>Pérez</td>
+    </tr>
+</table>
+```
+
+### 🌐 **Atributos Avanzados**
+- **`rowspan`:** Permite que una celda ocupe más de una fila.
+- **`colspan`:** Permite que una celda ocupe más de una columna.
+
+Ejemplo:
+```html
+<table>
+    <tr>
+        <td rowspan="2">Matemáticas</td>
+        <td>Lengua</td>
+        <td colspan="2">Ciencias</td>
+    </tr>
+    <tr>
+        <td>Historia</td>
+        <td>Física</td>
+        <td>Química</td>
+    </tr>
+</table>
+```
+
+### 💡 **Estilizando Tablas con CSS**
+Podemos personalizar tablas utilizando CSS:
+
+#### 📦 **Bordes Colapsados**
+```css
+table {
+    border-collapse: collapse;
+}
+td, th {
+    border: 1px solid black;
+}
+```
+
+#### 🔹 **Bordes sin Colapsar**
+```css
+table, td, th {
+    border: 1px solid black;
+}
+```
+
+#### 🌍 **Bordes Específicos**
+Podemos aplicar bordes específicos como "superior" o "inferior":
+```css
+td, th {
+    border-bottom: 1px solid black;
+}
 ```
 
 ---
 
-### ✍️ **Etiquetas de Formato**
-Estas etiquetas permiten cambiar el estilo del texto dentro de un documento:
-- **Negrita:** `<b>Texto</b>`
-- **Cursiva:** `<i>Texto</i>`
-- **Tachado:** `<del>Texto</del>`
-- **Énfasis:** `<em>Texto</em>`
-
-Ejemplo:
-```html
-<p>Este es un <b>texto en negrita</b> y este es un <i>texto en cursiva</i>.</p>
-```
-
----
-
-Con esta información tienes una visión clara de los fundamentos de HTML. ¡Sigamos avanzando para profundizar más! 🚀
+Con esta información tienes una guía completa para trabajar con tablas en HTML. 🚀
