@@ -19,6 +19,7 @@ HTML (HyperText Markup Language) es el lenguaje base para la construcción de p�
 
 ### 📜 **Etiquetas**
 Las etiquetas son la base del HTML, utilizadas para estructurar el contenido. Cada etiqueta se compone de una apertura y un cierre, como:
+
 ```html
 <h1>Esto es un encabezado</h1>
 <p>Esto es un párrafo</p>
@@ -28,6 +29,7 @@ Las etiquetas son la base del HTML, utilizadas para estructurar el contenido. Ca
 
 ### ⚙️ **Atributos**
 Los atributos proporcionan información adicional a las etiquetas y se definen dentro de la apertura. Ejemplo:
+
 ```html
 <img src="imagen.jpg" alt="Descripción de la imagen">
 ```
@@ -36,6 +38,7 @@ Los atributos proporcionan información adicional a las etiquetas y se definen d
 
 ### 💬 **Comentarios**
 Los comentarios se utilizan para añadir notas en el código que no serán visibles para el usuario:
+
 ```html
 <!-- Esto es un comentario -->
 ```
@@ -71,18 +74,21 @@ La cabecera (`<head>`) incluye información que no se muestra directamente en la
 - `<title>`: Título que aparece en la pestaña del navegador.
 - `<meta>`: Metadatos, como la codificación de caracteres.
   - Ejemplos comunes de meta etiquetas:
-    ```html
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Página web de ejemplo">
-    <meta name="keywords" content="tienda, boniatos, sevilla">
-    <meta name="author" content="Tu Nombre">
-    ```
+
+```html
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="Página web de ejemplo">
+<meta name="keywords" content="tienda, boniatos, sevilla">
+<meta name="author" content="Tu Nombre">
+```
+
 - `<link>`: Enlace a archivos CSS.
 - `<script>`: Enlace a archivos JavaScript.
 
 Ejemplo completo de `<head>`:
+
 ```html
 <head>
     <title>Mi Primera Página</title>
@@ -103,6 +109,7 @@ Ejemplo completo de `<head>`:
 
 ### 🌟 **Encabezados**
 Los encabezados estructuran el contenido en niveles jerárquicos, del más importante (`<h1>`) al menos importante (`<h6>`):
+
 ```html
 <h1>Título Principal</h1>
 <h2>Sección Importante</h2>
@@ -119,6 +126,7 @@ Las listas son muy utilizadas en HTML para organizar contenido:
 
 #### 🔢 **Listas Numeradas (Ordenadas)**
 Se crean con la etiqueta `<ol>` y cada elemento con `<li>`:
+
 ```html
 <ol>
     <li>Primer elemento</li>
@@ -130,6 +138,7 @@ Se crean con la etiqueta `<ol>` y cada elemento con `<li>`:
 
 #### 🔹 **Listas No Numeradas (Desordenadas)**
 Se crean con `<ul>`:
+
 ```html
 <ul>
     <li>Elemento 1</li>
@@ -140,6 +149,7 @@ Se crean con `<ul>`:
 
 #### 📄 **Listas Anidadas**
 Las listas pueden anidarse para crear subniveles:
+
 ```html
 <ul>
     <li>Elemento 1
@@ -154,6 +164,7 @@ Las listas pueden anidarse para crear subniveles:
 
 #### 🔗 **Listas de Definición**
 Se utilizan para términos y sus descripciones con `<dl>`, `<dt>` y `<dd>`:
+
 ```html
 <dl>
     <dt>HTML</dt>
@@ -174,12 +185,14 @@ La etiqueta `<img>` se utiliza para insertar imágenes. Atributos frecuentes:
 - **`width` y `height`:** Dimensiones.
 
 Ejemplo:
+
 ```html
 <img src="imagenes/ejemplo.jpg" alt="Descripción de la imagen" width="300" height="200">
 ```
 
 ### 🎮 **Figuras**
 La etiqueta `<figure>` se utiliza para asociar imágenes con una descripción:
+
 ```html
 <figure>
     <img src="img/openwebinars-logo.jpg" alt="Logo">
@@ -193,6 +206,7 @@ La etiqueta `<figure>` se utiliza para asociar imágenes con una descripción:
 - **URL:** Dirección de Internet.
 
 Ejemplo:
+
 ```html
 <img src="imagenes/ejemplo.jpg" alt="Relativa">
 <img src="https://ejemplo.com/imagen.jpg" alt="URL">
@@ -210,6 +224,7 @@ Una tabla básica se crea utilizando las etiquetas `<table>`, `<tr>`, `<th>`, y 
 - `<td>`: Define una celda.
 
 Ejemplo:
+
 ```html
 <table>
     <tr>
@@ -228,6 +243,7 @@ Ejemplo:
 - **`colspan`:** Permite que una celda ocupe más de una columna.
 
 Ejemplo:
+
 ```html
 <table>
     <tr>
@@ -247,6 +263,7 @@ Ejemplo:
 Podemos personalizar tablas utilizando CSS:
 
 #### 📦 **Bordes Colapsados**
+
 ```css
 table {
     border-collapse: collapse;
@@ -257,6 +274,7 @@ td, th {
 ```
 
 #### 🔹 **Bordes sin Colapsar**
+
 ```css
 table, td, th {
     border: 1px solid black;
@@ -265,6 +283,7 @@ table, td, th {
 
 #### 🌍 **Bordes Específicos**
 Podemos aplicar bordes específicos como "superior" o "inferior":
+
 ```css
 td, th {
     border-bottom: 1px solid black;
@@ -273,4 +292,60 @@ td, th {
 
 ---
 
-Con esta información tienes una guía completa para trabajar con tablas en HTML. 🚀
+## 7⃣ Formularios en HTML
+
+### 📄 **¿Para qué sirven los formularios?**
+
+Los formularios son elementos que permiten interactuar con una página web. Sus objetivos principales son:
+
+- Recoger información del usuario.
+- Enviar esos datos para ser almacenados, procesados o utilizados en diferentes operaciones.
+
+### 🧩 **Estructura básica de un formulario**
+
+```html
+<form method="POST" action="destino.html">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre">
+    <button type="submit">Enviar</button>
+</form>
+```
+
+### 🛠 **Elementos comunes en un formulario**
+
+1. `<input>`: Campo de entrada para texto, números, fechas, etc.
+2. `<textarea>`: Área de texto para entradas largas.
+3. `<button>`: Botones para acciones (enviar, resetear).
+4. `<label>`: Etiquetas para campos.
+5. `<select>` y `<option>`: Menús desplegables.
+6. `<fieldset>` y `<legend>`: Agrupación y descripción de campos.
+
+### 🔑 **Tipos de Inputs**
+
+Los elementos `<input>` son versátiles y pueden adoptar diferentes tipos:
+
+- **Textos y datos básicos:** `text`, `password`, `email`, `tel`, `url`
+- **Fechas y horarios:** `date`, `datetime-local`, `month`, `week`, `time`
+- **Selecciones:** `radio`, `checkbox`, `range`, `file`
+- **Botones:** `button`, `submit`, `reset`
+
+Ejemplo:
+
+```html
+<input type="text" placeholder="Nombre">
+<input type="email" required>
+<input type="date">
+```
+
+### 📌 **Atributos Importantes**
+
+1. `required`: Campo obligatorio.
+2. `disabled`: Campo deshabilitado.
+3. `readonly`: Campo de solo lectura.
+4. `placeholder`: Texto de ayuda en el campo.
+5. `value`: Valor inicial del campo.
+6. `multiple`: Permitir múltiples valores (como para subir varios archivos).
+
+---
+
+Con esta guía, tienes una visión integral sobre cómo trabajar con formularios en HTML. 🚀
